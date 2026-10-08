@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="Sidecar: a customizable dashboard for your side monitor">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d12"/>
+      <stop offset="1" stop-color="#151a26"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2a6b"/>
+      <stop offset="0.6" stop-color="#c8507a"/>
+      <stop offset="1" stop-color="#ffb46a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="24" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="70" y="138" font-size="68" font-weight="700" fill="#e8ebf2" letter-spacing="-1.5">Sidecar</text>
+    <text x="72" y="184" font-size="25" fill="#8a93a6">A customizable dashboard for your side monitor</text>
+    <g font-size="15" font-weight="600" fill="#6ea8fe">
+      <rect x="70" y="212" width="112" height="32" rx="16" fill="#6ea8fe" fill-opacity="0.14"/>
+      <text x="126" y="233" text-anchor="middle">No install</text>
+      <rect x="192" y="212" width="126" height="32" rx="16" fill="#6ea8fe" fill-opacity="0.14"/>
+      <text x="255" y="233" text-anchor="middle">Drag &amp; resize</text>
+      <rect x="328" y="212" width="126" height="32" rx="16" fill="#6ea8fe" fill-opacity="0.14"/>
+      <text x="391" y="233" text-anchor="middle">Plain HTML/JS</text>
+    </g>
+  </g>
+
+  <!-- Miniature dashboard -->
+  <g transform="translate(690 38)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <g fill="#151922" stroke="#262d3b" stroke-width="1.5">
+      <rect x="0" y="0" width="290" height="84" rx="12"/>
+      <rect x="300" y="0" width="150" height="84" rx="12"/>
+      <rect x="0" y="94" width="140" height="130" rx="12"/>
+      <rect x="150" y="94" width="140" height="60" rx="12"/>
+      <rect x="300" y="94" width="150" height="130" rx="12"/>
+    </g>
+    <rect x="150" y="164" width="140" height="60" rx="12" fill="url(#sun)" stroke="#262d3b" stroke-width="1.5"/>
+    <circle cx="220" cy="206" r="13" fill="#ffe9b8"/>
+    <path d="M150 212 q35 -22 70 -6 t70 -8 v14 a12 12 0 0 1 -12 12 h-116 a12 12 0 0 1 -12 -12 z" fill="#1c1030"/>
+
+    <!-- clock -->
+    <text x="145" y="56" text-anchor="middle" font-size="46" font-weight="300" fill="#e8ebf2" letter-spacing="-1">10:42</text>
+    <!-- weather -->
+    <circle cx="340" cy="42" r="15" fill="#f7b955"/>
+    <text x="368" y="54" font-size="32" font-weight="300" fill="#e8ebf2">72°</text>
+    <!-- pomodoro ring -->
+    <circle cx="70" cy="159" r="38" fill="none" stroke="#262d3b" stroke-width="7"/>
+    <circle cx="70" cy="159" r="38" fill="none" stroke="#6ea8fe" stroke-width="7" stroke-linecap="round" stroke-dasharray="160 239" transform="rotate(-90 70 159)"/>
+    <text x="70" y="166" text-anchor="middle" font-size="19" fill="#e8ebf2">18:07</text>
+    <!-- stopwatch -->
+    <text x="220" y="132" text-anchor="middle" font-size="22" font-weight="300" fill="#e8ebf2">01:27.60</text>
+    <!-- checklist -->
+    <g>
+      <rect x="318" y="114" width="16" height="16" rx="4" fill="#5fd08a"/>
+      <path d="M322 122 l3 3 l6 -7" fill="none" stroke="#0b0d12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="344" y="118" width="84" height="8" rx="4" fill="#3a4254"/>
+      <rect x="318" y="144" width="16" height="16" rx="4" fill="#5fd08a"/>
+      <path d="M322 152 l3 3 l6 -7" fill="none" stroke="#0b0d12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="344" y="148" width="62" height="8" rx="4" fill="#3a4254"/>
+      <rect x="319" y="175" width="14" height="14" rx="4" fill="none" stroke="#8a93a6" stroke-width="2"/>
+      <rect x="344" y="178" width="90" height="8" rx="4" fill="#8a93a6"/>
+      <rect x="319" y="205" width="14" height="14" rx="4" fill="none" stroke="#8a93a6" stroke-width="2" opacity="0"/>
+    </g>
+  </g>
+</svg>

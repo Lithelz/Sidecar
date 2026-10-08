@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sidecar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="editbar"></div>
+  <main id="grid"></main>
+  <button id="editbtn" class="btn" title="Edit layout">Edit</button>
+  <div id="toast"></div>
+
+  <script src="js/core.js"></script>
+
+  <!-- Tiles: one file each. To add a tile, create js/tiles/<name>.js and add a line here. -->
+  <script src="js/tiles/clock.js"></script>
+  <script src="js/tiles/timer.js"></script>
+  <script src="js/tiles/pomodoro.js"></script>
+  <script src="js/tiles/alarms.js"></script>
+  <script src="js/tiles/stopwatch.js"></script>
+  <script src="js/tiles/image.js"></script>
+  <script src="js/tiles/checklist.js"></script>
+  <script src="js/tiles/spotify.js"></script>
+  <script src="js/tiles/calendar.js"></script>
+  <script src="js/tiles/weather.js"></script>
+  <script src="js/tiles/embed.js"></script>
+
+  <script>Dash.start();</script>
+</body>
+</html>
